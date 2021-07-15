@@ -18,6 +18,8 @@ Todo-app - projet 8 :
     Après vérifications et recherche j'ai constaté que le fichier appeler ligne 248 du fichier base.js du dossier => todomvc-common est inexistant
     J'ai donc supprimer cette ligne.
     
+ - 
+    
     
 
       
