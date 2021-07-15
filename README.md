@@ -1,6 +1,6 @@
-# correction-de-bugs
+Todo-app - projet 8 :
 
-1 ère étape :
+1 ère étape corrections de bugs :
 - Le premier est une faute de frappe.
   -> Controller.js : erreur de frappe concernant à la ligne 95 du fichier.
   
@@ -16,7 +16,9 @@
     <img width="1547" alt="Capture d’écran 2021-07-15 à 17 28 49" src="https://user-images.githubusercontent.com/53316189/125815229-ccdd0716-2b20-4cfd-8a9d-c6c52d9a68f5.png">
     
     Après vérifications et recherche j'ai constaté que le fichier appeler ligne 248 du fichier base.js du dossier => todomvc-common est inexistant
-    J'ai donc supprimer cette ligne
+    J'ai donc supprimer cette ligne.
+    
+    
 
       
      
