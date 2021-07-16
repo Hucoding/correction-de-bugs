@@ -1,6 +1,7 @@
 Todo-app - projet 8 :
 
 1 ère étape corrections de bugs :
+
 - La première erreur est une faute de frappe.
   -> Controller.js : erreur de frappe concernant à la ligne 95 du fichier.
   
@@ -18,8 +19,7 @@ Todo-app - projet 8 :
     Après vérifications et recherche j'ai constaté que le fichier appeler ligne 248 du fichier base.js du dossier => todomvc-common est inexistant
     J'ai donc supprimer cette ligne.
     
- - 
-    
+ - Un id est manquant sur la flèche id="toggle-all" au niveau du fichier index.html à la ligne : 16
     
 
       
