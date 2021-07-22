@@ -60,7 +60,14 @@ describe('controller', function () {
 
 	it('should show entries on start-up', function () {
 		// TODO: write test
-		console.log("start-up test");
+		// writing a basic todo
+		var todo = 'something to do';
+		// first, sending it into the model (who manage the data)
+		setUpModel([todo]);
+		// init the route to default
+		subject.setView('');
+		// Verify that render one empty todo
+		expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
 	});
 
 	describe('routing', function () {
