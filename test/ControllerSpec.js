@@ -225,12 +225,49 @@ describe('controller', function () {
 
 		it('should update the view', function () {
 			// TODO: write test
+			var todos = [
+				{ id: 1, title: 'todo test 1', completed: false },
+				{ id: 2, title: 'todo test 2', completed: false }
+			];
+
+			setUpModel(todos);
+			subject.setView('');
+
+			// Click sur le bouton "toggleAll"
+			view.trigger('toggleAll', { completed: true });
+
+			// Doit être mis à jour sur true
+			expect(view.render).toHaveBeenCalledWith('elementComplete', {
+				id: 1,
+				completed: true
+			});
+
+			expect(view.render).toHaveBeenCalledWith('elementComplete', {
+				id: 2,
+				completed: true
+			});
+
 		});
 	});
 
 	describe('new todo', function () {
 		it('should add a new todo to the model', function () {
 			// TODO: write test
+			var todo = { 
+				id: 1, 
+				title: 'todo test', completed: false 
+			};
+			
+			setUpModel([todo]);
+
+			subject.setView('');
+
+			view.trigger('newTodo', 'a new todo');
+
+			expect(model.create).toHaveBeenCalledWith(
+			   'a new todo',
+			   jasmine.any(Function)
+			);
 		});
 
 		it('should add a new todo to the view', function () {
@@ -271,6 +308,23 @@ describe('controller', function () {
 	describe('element removal', function () {
 		it('should remove an entry from the model', function () {
 			// TODO: write test
+			var todo = {
+				id: 1,
+				title: 'todo test 1',
+				completed: false
+			};
+
+			setUpModel([todo]);
+
+			subject.setView('');
+
+			view.trigger(
+				'itemRemove', 
+				{ id: 1 }
+			);
+	
+			//retire 1 élément à droite
+			expect(model.remove).toHaveBeenCalledWith(1, jasmine.any(Function));
 		});
 
 		it('should remove an entry from the view', function () {

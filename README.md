@@ -22,10 +22,18 @@ Todo-app - projet 8 :
  - Un id est manquant sur la flèche id="toggle-all" au niveau du fichier index.html à la ligne : 16
 
 Tests unitaires :
-Les tests sont présents dans le fichier test/ControllerSpec.js
-   - le premier test vérifie si les todos sont bien affichées (lignes 61 à 71)
-   - Ce test vérifie si les todos "actives" s'affichent correctement (lignes 93 à 103)
-   - Ce test vérifie si les todos "completed" s'affichent correctement (lignes 105 à 105)
+Les tests sont présents dans le fichier test/ControllerSpec.js. 
+9 de tests unitaires on été réalisés dans ce fichier.
+
+   - le premier test vérifie si les todos sont bien affichées (lignes 61 à 74)
+   - Ce test vérifie si les todos "actives" s'affichent correctement (lignes 96 à 110)
+   - Ce test vérifie si les todos "completed" s'affichent correctement (lignes 112 à 126)
+   - Ce test vérifie que l'onglet "All" est chargé correctement lorsque l'utilisateur arrive sur la page (lignes 171 à 193)
+   - Ce test vérifie que l'onglet "Active" s'active correctement lorsque l'utilisateur clique dessus (lignes 185 à 198)
+   - Ce test vérifie si le bouton "toggleAll" est bien fonctionnel et que la séléction des todos l'est également (lignes 201 à 224)
+   - Ce test effectue une vérification pour voir si l'application mets à jours la vue (test en liens avec toggleAll) (lignes 226 à 250)
+   - Ce test effetue une vérification pour voir si la note est bien ajouté à la liste actuelle (lignes 254 à 271)
+   - Ce test effetue une vérification pour voir si la note est bien supprimé de la liste (lignes 309 à 328)
 
 
 
