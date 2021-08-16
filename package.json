@@ -1,6 +1,8 @@
 {
   "private": true,
-  "scripts": {"test": "jasmine"},
+  "scripts": {
+    "test": "jasmine"
+  },
   "dependencies": {
     "todomvc-app-css": "^2.0.1",
     "todomvc-common": "^1.0.1"
