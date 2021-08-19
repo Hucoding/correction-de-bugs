@@ -7,5 +7,3 @@ Le wiki présente différentes partie de ce projet :
 - [Rapport fonctionnel](https://github.com/Hucoding/correction-de-bugs/wiki/Rapport-fonctionnel)
 - [Test unitaires](https://github.com/Hucoding/correction-de-bugs/wiki/Test-unitaires)
 - [Audit](https://github.com/Hucoding/correction-de-bugs/wiki/Audit)
-
-test
